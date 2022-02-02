@@ -11,7 +11,7 @@
             steps{
               sshagent(credentials : ['barath']) {
               sh 'ssh -o StrictHostKeyChecking=no ubuntu@3.20.203.66'
-              sh 'scp -p -r /var/lib/jenkins/workspace/my-work@2 ubuntu@3.20.203.66:/var/www/html'
+              sh 'scp -p -r /var/lib/jenkins/workspace/demo@2 ubuntu@3.20.203.66:/var/www/html'
               }
             }
         }
