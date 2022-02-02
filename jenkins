@@ -1,7 +1,7 @@
  pipeline {
     agent any
     stages {
-        stage('gitclone') {
+        stage('build') {
             steps { 
                 sh'''npm i'''
                 sh'''npm run build'''
