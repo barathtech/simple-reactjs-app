@@ -3,8 +3,8 @@
     stages {
         stage('build') {
             steps { 
-                sh'''apt update'''
-                sh'''apt install npm -y'''
+                sh'''apt-get update && apt-get upgrade -y'''
+                sh'''apt-get install npm -y'''
                 sh'''npm start'''
             }
         }
